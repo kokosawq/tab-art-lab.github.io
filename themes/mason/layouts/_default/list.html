@@ -1,12 +1,14 @@
 {{ define "main" }}
-	<h1>{{ .Title }}</h1>
+	<h1 class="text-center">{{ .Title }}</h1>
 
 	<div class="grid" data-masonry='{"percentPosition": true, "columnWidth": ".grid-sizer", "itemSelector": ".grid-item", "gutter": ".gutter-sizer", "horizontalOrder": true}'>
 	<div class="grid-sizer"></div>
 	<div class="gutter-sizer"></div>
 
 	{{ if .Page.IsHome }}
-		{{ range .Site.RegularPages }}
+		{{ range $index, $element := .Site.RegularPages }}
+			<!-- pass index into grid-item partial -->
+		    {{ .Scratch.Set "index" $index }}
 			{{ partial "grid-item.html" . }}
 		{{ end }}
 	{{ else }}
@@ -29,10 +31,12 @@
 
 		.grid-sizer,
 		.grid-item {
-		  width: 24%;
+		  width: 19%;
 		  margin-bottom: 1%;
 		  padding: 1%;
 		}
+
+		.grid-item--width2 { width: 38%; }
 
 		.gutter-sizer {
 		  width: 1%;
