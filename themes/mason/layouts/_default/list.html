@@ -18,8 +18,10 @@
 	{{ end }}
 
 	<style>
-		.grid {
-		  max-width: 1200px;
+		:root {
+			--cols: 5;
+			--width: calc((100% / var(--cols)) - 1%);
+			--space: calc((100% - var(--width) * var(--cols)) / (var(--cols) - 1));
 		}
 
 		/* clearfix */
@@ -31,15 +33,15 @@
 
 		.grid-sizer,
 		.grid-item {
-		  width: 19%;
-		  margin-bottom: 1%;
-		  padding: 1%;
+		  width: var(--width);
+		  margin-bottom: var(--space);
+		  padding: var(--space);
 		}
 
-		.grid-item--width2 { width: 38%; }
+		.grid-item--width2 { width: calc(var(--width) * 2); }
 
 		.gutter-sizer {
-		  width: 1%;
+		  width: var(--space);
 		}
 	</style>
 {{ end }}
