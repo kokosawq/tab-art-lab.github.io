@@ -1,0 +1,3 @@
+[submodule "themes/masonry"]
+	path = themes/masonry
+	url = https://github.com/fhightower/hugo-masonry.git
