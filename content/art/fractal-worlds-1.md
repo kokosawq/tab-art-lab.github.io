@@ -1,9 +1,9 @@
 ---
 title: "Fractal Worlds 1"
-date: 2023-01-26
+date: 2023-01-30
 defaultImage: fractal-worlds-1.jpg
 etsyLink: ""
-tags: ["Fractals", "Black & White"]
+tags: ["Fractals", "Black & White", "Mandelbrot set"]
 ---
 
 <!--more-->

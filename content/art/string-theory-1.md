@@ -3,7 +3,7 @@ title: "String Theory 1"
 date: 2022-09-03
 defaultImage: "string-theory-1.jpg"
 etsyLink: ""
-tags: ["Fractals", "Black & White", "String Theory", "n-Queens Problem"]
+tags: ["Fractals", "Black & White", "String Theory", "n-Queens Problem", "Chess", "Mandelbrot set"]
 ---
 
 A fractal representation of a simple pattern.
