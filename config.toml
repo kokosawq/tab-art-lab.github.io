@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Tab Art Lab'
 theme = "masonry"
 
+[params]
+    showFooter = false
+
 [menu]
   [[menu.main]]
     name = "Home"
